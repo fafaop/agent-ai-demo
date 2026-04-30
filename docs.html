@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Docs · Agent / AI Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="docs">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">OpenClaw / Agent Demo</a>
+        <nav class="nav">
+          <a href="./index.html" data-nav="home">演示</a>
+          <a href="./status.html" data-nav="status">状态</a>
+          <a href="./docs.html" data-nav="docs">文档</a>
+        </nav>
+      </header>
+
+      <section class="page-header panel">
+        <div class="badge">Project Docs</div>
+        <h1>项目文档</h1>
+        <p>这里整理了在线演示平台的结构、能力范围、访问方式与适用场景，方便用于展示或提交申请材料。</p>
+      </section>
+
+      <main class="content-grid">
+        <section class="panel">
+          <h2>项目定位</h2>
+          <p>
+            本项目是一个面向嵌入式软件研发的 Agent / AI 在线演示页面，重点展示超大型自动化编码、自动化测试构建、调试版本分析和团队共用场景。它以静态 Web 页面形式提供，适合作为能力展示入口和项目说明页。
+          </p>
+        </section>
+
+        <section class="panel">
+          <h2>在线访问</h2>
+          <div class="doc-block">
+            <p>当前服务通过静态 Web 页面运行，可通过以下路径访问：</p>
+            <pre class="code-block"><code>http://127.0.0.1:8080/</code></pre>
+            <p>如果当前主机已开放外部访问并映射 8080 端口，也可使用对应公网 IP 或域名访问。</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>核心展示内容</h2>
+          <div class="card-grid">
+            <article class="mini-card">
+              <h3>自动化编码</h3>
+              <p>展示多模块嵌入式工程中的批量代码生成、补全与重构能力。</p>
+            </article>
+            <article class="mini-card">
+              <h3>自动化测试</h3>
+              <p>展示基于代码与需求文档自动生成测试用例、脚本与回归验证内容的能力。</p>
+            </article>
+            <article class="mini-card">
+              <h3>调试与排障</h3>
+              <p>展示日志分析、问题定位、调试版本迭代与修复建议输出能力。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
