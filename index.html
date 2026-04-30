@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agent / AI 在线演示平台</title>
+    <meta
+      name="description"
+      content="面向嵌入式软件研发的 Agent / AI 超大型自动化编码与测试调试平台在线演示页面。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">OpenClaw / Agent Demo</a>
+        <nav class="nav">
+          <a href="./index.html" data-nav="home">演示</a>
+          <a href="./status.html" data-nav="status">状态</a>
+          <a href="./docs.html" data-nav="docs">文档</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="badge">Online Demo</div>
+        <h1>嵌入式软件 Agent / AI 超大型自动化编码平台</h1>
+        <p class="hero-text">
+          这是一个基于 Web 的在线演示页面，用于展示 Agent / AI 在嵌入式软件研发中的完整工作流：从需求拆解、批量代码生成、自动化测试构建，到日志分析、问题定位和调试版本迭代。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#overview">查看项目概览</a>
+          <a class="button secondary" href="./docs.html">查看详细文档</a>
+        </div>
+      </section>
+
+      <main class="content-grid">
+        <section class="panel" id="overview">
+          <h2>项目概览</h2>
+          <p>
+            当前使用 Agent / AI 的场景并非普通问答，而是用于超大型自动化编码与测试调试平台。项目主要面向嵌入式软件及相关工程研发，覆盖从需求拆解、代码生成、批量修改、测试用例构建、日志分析、问题定位到调试版本迭代的完整流程，属于高并发、长上下文、多轮推理的重度生产使用场景。
+          </p>
+        </section>
+
+        <section class="panel">
+          <h2>核心能力</h2>
+          <div class="card-grid">
+            <article class="mini-card">
+              <h3>超大型自动化编码</h3>
+              <p>支持面向多模块嵌入式工程批量生成、补全和重构代码，覆盖驱动逻辑、协议处理、状态机控制、异常处理与接口适配，并可跨文件、跨模块连续修改。</p>
+            </article>
+            <article class="mini-card">
+              <h3>自动化测试功能构建</h3>
+              <p>基于现有代码和需求文档，自动生成测试用例、接口验证脚本、联调脚本、回归测试脚本以及问题复现步骤，提升测试覆盖率与验证效率。</p>
+            </article>
+            <article class="mini-card">
+              <h3>调试版本与问题排查</h3>
+              <p>持续用于分析日志、报错信息、调用链路、模块依赖和配置差异，辅助快速生成调试版本、定位异常原因并给出修复建议。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>团队级使用场景</h2>
+          <div class="check-list">
+            <div class="check-item">多人协同共用：团队成员共同用于编码、测试、调试与文档输出。</div>
+            <div class="check-item">大项目持续迭代：多模块、多版本并行推进，既有历史维护，也有新增功能开发与测试验证。</div>
+            <div class="check-item">长上下文重度调用：支持大批量任务执行、多轮迭代修改和复杂工程推理。</div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>资源消耗与规模</h2>
+          <div class="game-stats">
+            <div class="stat-card">
+              <span>典型日用量</span>
+              <strong>1 亿 Token</strong>
+            </div>
+            <div class="stat-card">
+              <span>核心场景</span>
+              <strong>自动编码 / 测试 / 调试</strong>
+            </div>
+            <div class="stat-card">
+              <span>使用方式</span>
+              <strong>团队共用</strong>
+            </div>
+          </div>
+          <p>
+            平台日常主要消耗来源包括大规模代码生成与批量重构、自动化测试脚本构建、调试版本分析、多成员并行调用以及长上下文多轮交互。在集中开发和联调高峰期，消耗量还会进一步上升。
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
