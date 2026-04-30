@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server Status · Agent / AI Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="status">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">OpenClaw / Agent Demo</a>
+        <nav class="nav">
+          <a href="./index.html" data-nav="home">演示</a>
+          <a href="./status.html" data-nav="status">状态</a>
+          <a href="./docs.html" data-nav="docs">文档</a>
+        </nav>
+      </header>
+
+      <section class="page-header panel">
+        <div class="badge">Runtime Status</div>
+        <h1>运行状态面板</h1>
+        <p>这个页面用于快速确认当前在线演示站可访问、页面资源正常，以及静态服务运行稳定。</p>
+      </section>
+
+      <main class="content-grid">
+        <section class="panel">
+          <h2>服务状态</h2>
+          <ul class="status-list">
+            <li><span>本地地址</span><strong>http://127.0.0.1:8080</strong></li>
+            <li><span>页面状态</span><strong class="ok">ONLINE</strong></li>
+            <li><span>服务类型</span><strong>Python http.server</strong></li>
+            <li><span>页面时间</span><strong id="buildTime">--</strong></li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>建议检查项</h2>
+          <div class="check-list">
+            <div class="check-item">确认首页、状态页、文档页都可正常访问</div>
+            <div class="check-item">确认样式与脚本加载正常</div>
+            <div class="check-item">确认公网分享地址已正确映射到本地 8080 端口</div>
+            <div class="check-item">确认演示内容与说明文档一致</div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
